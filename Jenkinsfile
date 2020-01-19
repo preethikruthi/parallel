@@ -7,19 +7,19 @@ pipeline {
 			steps {
 				input ('press yes to continue')
 				echo 'building ...'
-				sh 'sleep 1'
+				sh 'sleep 10'
 			}
 		}
 		       stage ('depoly') {
 			steps {
 				echo 'deploying to test environment...'
-				sh 'sleep 1'
+				sh 'sleep 10'
 			}
 		}
 			      stage ('test') {
 			steps {
 				echo 'testing ...'
-				sh 'sleep 1'
+				sh 'sleep 10'
 			}
 		}
 	
