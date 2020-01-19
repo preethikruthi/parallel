@@ -1,7 +1,8 @@
 pipeline {
 	agent any
 	stages {
-		parallel {
+		stage ('all stage') {
+			parallel {
 		stage {'build-check') {
 			steps {
 				echo 'building ...'
