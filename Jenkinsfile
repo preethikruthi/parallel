@@ -4,15 +4,13 @@ pipeline {
 		stage ('all stage') {
 			
 			stage ('build-check') {
-			steps {
-				input ('press yes to continue')
-				echo 'building ...'
-				sh 'sleep 10'
+				steps {
+					input ('press yes to continue')
+					echo 'building'...'
+					sh 'sleep 10'
+				}
 			}
-		}
-			
-		       stage ('depoly')  {
-			   parallel {    
+			stage ('depoy') {   
 			steps {
 				echo 'deploying to test environment...'
 				sh 'sleep 10'
