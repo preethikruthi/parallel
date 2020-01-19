@@ -7,6 +7,7 @@ pipeline {
 				steps {
 					input ('press yes to continue')
 					echo 'building...'
+					build job:'parallel',parameter:[string (name:'pipeline')]
 					sh 'sleep 10'
 				}
 			}
