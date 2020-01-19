@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage ('all stage') {
 			parallel {
-		stage {'build-check') {
+		stage ('build-check') {
 			steps {
 				echo 'building ...'
 				sh 'sleep 100'
