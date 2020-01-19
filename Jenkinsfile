@@ -5,6 +5,7 @@ pipeline {
 			parallel {
 		stage ('build-check') {
 			steps {
+				input ('press yes to continue')
 				echo 'building ...'
 				sh 'sleep 1'
 			}
