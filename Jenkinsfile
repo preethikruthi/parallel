@@ -9,8 +9,8 @@ pipeline {
 				echo 'building ...'
 				sh 'sleep 10'
 			}
-		}
-		       stage ('depoly') parallel {
+		}parallel {
+		       stage ('depoly')  {
 			       
 			steps {
 				echo 'deploying to test environment...'
