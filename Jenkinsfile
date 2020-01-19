@@ -6,7 +6,7 @@ pipeline {
 			stage ('build-check') {
 				steps {
 					input ('press yes to continue')
-					echo 'building'...'
+					echo 'building...'
 					sh 'sleep 10'
 				}
 			}
