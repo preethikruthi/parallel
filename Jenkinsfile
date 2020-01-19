@@ -2,7 +2,7 @@ pipeline {
 	agent any
 	stages {
 		parallel {
-		stage {'build_check') {
+		stage {'build-check') {
 			steps {
 				echo 'building ...'
 				sh 'sleep 100'
