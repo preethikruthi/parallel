@@ -2,7 +2,7 @@ pipeline {
 	agent any
 	stages {
 		stage ('all stage') {
-			parallel {
+			
 			
 		stage ('build-check') {
 			steps {
@@ -13,7 +13,7 @@ pipeline {
 		}
 			
 		       stage ('depoly')  {
-			       
+			   parallel {    
 			steps {
 				echo 'deploying to test environment...'
 				sh 'sleep 10'
