@@ -1,7 +1,8 @@
 pipeline {
 	agent any
 	stages {
-		stage ('all stage') 
+		stage ('all stage') {
+			parallel {
 			
 		stage ('build-check') {
 			steps {
@@ -10,7 +11,7 @@ pipeline {
 				sh 'sleep 10'
 			}
 		}
-			parallel {
+			
 		       stage ('depoly')  {
 			       
 			steps {
