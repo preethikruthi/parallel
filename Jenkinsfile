@@ -9,7 +9,8 @@ pipeline {
 				echo 'building ...'
 				sh 'sleep 10'
 			}
-		}parallel {
+		}
+			parallel {
 		       stage ('depoly')  {
 			       
 			steps {
