@@ -3,8 +3,7 @@ pipeline {
 	stages {
 		stage ('all stage') {
 			
-			
-		stage ('build-check') {
+			stage ('build-check') {
 			steps {
 				input ('press yes to continue')
 				echo 'building ...'
