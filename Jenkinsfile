@@ -8,19 +8,19 @@ pipeline {
 					input ('press yes to continue')
 					echo 'building...'
 					build job:'parallel',parameter:[string (name:'pipeline')]
-					sh 'sleep 10'
+					sh 'sleep 1'
 				}
 			}
 			stage ('depoy') {   
 			steps {
 				echo 'deploying to test environment...'
-				sh 'sleep 10'
+				sh 'sleep 1'
 			}
 		}
 			      stage ('test') {
 			steps {
 				echo 'testing ...'
-				sh 'sleep 10'
+				sh 'sleep 1'
 			}
 		}
 	
