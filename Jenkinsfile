@@ -2,7 +2,7 @@ pipeline {
 	agent any
 	stages {
 		stage ('all stage') {
-			
+			parallel {
 			stage ('build-check') {
 				steps {
 					input ('press yes to continue')
