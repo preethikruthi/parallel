@@ -1,7 +1,7 @@
 pipeline {
 	agent any
 	stages {
-		stage ('all stage') {
+		stage ('all stage') 
 			
 		stage ('build-check') {
 			steps {
